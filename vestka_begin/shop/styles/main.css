@@ -1,0 +1,25 @@
+ul {
+     --accent-color: purple;
+   }
+ol {
+    --accent-color: rebeccapurple;
+   }
+
+img {
+    height: 200px; /* Высота блока */
+    width: 230px; /* Ширина блока */
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    background: #27ff35; /* Цвет фона */
+    padding: 7px; /* Поля вокруг текста */
+    border: 1px solid #5d50b3; /* Параметры рамки */
+}
+title
+{
+    margin: 0;
+    padding: 0;
+   }
+hr
+{ margin: 0; }
+#main
+{ width: 100%}
+
