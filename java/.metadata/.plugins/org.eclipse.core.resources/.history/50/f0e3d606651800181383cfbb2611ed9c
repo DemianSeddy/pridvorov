@@ -1,0 +1,43 @@
+package menu;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.WindowConstants;
+
+public class menu extends JFrame {
+
+
+   menu() {
+	 //Определяем фрейм окна
+	 super("Основное окно");
+     setSize(240, 500);
+     setResizable(false);
+ 
+     setLayout(new BorderLayout());
+     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+     //Создаем основное меню 
+     //Создали панель меню
+     JMenuBar menuBar = new JMenuBar();
+     //Создаем пункты основнго меню 
+     JMenu menuFile = new JMenu("Файл");
+     JMenu menuEdit = new JMenu("Редактировать");
+     JMenu menuExit = new JMenu("Выход");
+     //Прибили к панели пункты меню
+     menuBar.add(menuFile);
+     menuBar.add(menuEdit);
+     menuBar.add(menuExit);
+     setJMenuBar(menuBar);//Прибили у фрейму панель меню
+     
+   
+     setVisible(true);
+
+	}
+	
+	public static void main(String[] args) {
+		new menu();
+	}
+
+}

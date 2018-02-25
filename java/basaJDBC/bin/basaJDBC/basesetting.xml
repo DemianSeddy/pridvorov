@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <regdriver>
+       com.mysql.jdbc.Driver
+  </regdriver>
+  <urlbase>
+     <url>
+	    jdbc:mysql://localhost/
+	 </url>
+	 <base>
+	    my_base
+	 </base>
+  </urlbase>	 
+   <userpass>
+     <user>
+	    root
+	 </user>
+	 <pass>
+	    101326
+	 </pass>
+   </userpass>
+	 
+	 

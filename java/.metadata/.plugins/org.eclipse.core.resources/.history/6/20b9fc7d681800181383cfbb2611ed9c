@@ -1,0 +1,61 @@
+package menu;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.WindowConstants;
+
+public class menu extends JFrame {
+
+
+   menu() {
+	 //Определяем фрейм окна
+	 super("Основное окно");
+     setSize(240, 500);
+     setResizable(false);
+ 
+     setLayout(new BorderLayout());
+     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+     //Создаем основное меню 
+     //Создали панель меню
+     JMenuBar menuBar = new JMenuBar();
+     //Создаем пункты основнго меню 
+     JMenu menuFile = new JMenu("Файл c матрицей");
+     JMenu menuAvto = new JMenu("Автомобили");
+     JMenu menuExit = new JMenu("Выход");
+     //Обработка меню
+     //menuFile.addMouseListener(new MenuExampleMouseAdapter("Menu file"," ",status));
+     //menuAvto.addMouseListener(new MenuExampleMouseAdapter("Menu view"," ",status));
+     //menuExit.addMouseListener(new MenuExampleMouseAdapter("Thread"," ",status));
+     //Прибили к панели пункты меню
+     menuBar.add(menuFile);
+     menuBar.add(menuAvto);
+     menuBar.add(menuExit);
+     
+   //Создаем элементы подменю File с обработчиками событий
+     JMenuItem item1 = new JMenuItem("Обработка файла");
+     //item1.addMouseListener(new MenuExampleMouseAdapter("New file"," ",status));
+     JMenuItem item2 = new JMenuItem("Open");
+     //item2.addMouseListener(new MenuExampleMouseAdapter("Open file"," ",status));
+     JMenuItem item3 = new JMenuItem("Save");
+     //item3.addMouseListener(new MenuExampleMouseAdapter("Save file"," ",status));
+     
+     //Прибили к меню подменю
+     menuFile.add(item1);
+     
+     //Прибили у фрейму панель меню
+     setJMenuBar(menuBar);
+     
+   
+     setVisible(true);
+
+	}
+	
+	public static void main(String[] args) {
+		new menu();
+	}
+
+}
