@@ -1,0 +1,38 @@
+.mirrorY { 
+         transform: scale(1, -1); 
+}
+
+.parent_header {
+	display: flex;
+	flex-direction: row;
+	flex-basis: auto;
+	justify-content: flex-start;
+    align-content: stretch;
+	align-items: stretch;
+}
+
+.child_header_char {
+    display: block;
+    align-self: flex-start;
+    align-items: center; /* Выравнивание текста по вертикали */
+    justify-content: center; /* Выравнивание текста по горизонтали */
+    height: 80px; /* Высота блока */
+    width:  20px; /* Ширина блока */
+    border: double;
+    text-align:center;
+	
+
+}
+
+.child_header {
+    display: block;
+    align-self: flex-start;
+    align-items: center; /* Выравнивание текста по вертикали */
+    justify-content: center; /* Выравнивание текста по горизонтали */
+    height: 80px; /* Высота блока */
+    width:  80px; /* Ширина блока */
+    border: double;
+    text-align:center;
+    background:white;
+	
+}

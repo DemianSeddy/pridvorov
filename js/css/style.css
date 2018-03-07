@@ -1,0 +1,69 @@
+.grid {
+	border: solid 1px black;
+	border-bottom: 1px solid grey;
+
+}
+th {
+    font-style:italic  ;
+	border-bottom: 1px solid grey;
+	background-color: grey;
+	border-collapse: collapse;
+}
+
+td{
+	border:1px solid black;
+}
+
+
+.box_red {
+	background: red;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.box_green {
+	background: green;
+	width: 100px;
+	height: 100px;
+	clear: left;
+	float: left;
+}
+
+
+
+.box_broun {
+	background: brown;
+	width: 100px;
+	height: 100px;
+	clear: left;
+	float: left;
+}
+
+
+.box_yelow{
+	background: yellow;
+	width: 100px;
+	height: 100px;
+	clear: left;
+	float: left;
+}
+
+.box_blue{
+	background: #66ffff ;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+
+.box_fiolet{
+	background: #66ffff ;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+img {
+	width: 100px;
+	height: 100px;
+}
