@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <regdriver>
+       com.mysql.jdbc.Driver
+  </regdriver>
+  <pathbase>
+      <path>jdbc:mysql://192.168.100.150</path>
+	    <base>my_base</base>
+   </pathbase>	 
+    <userpass>
+     <user>demianrich_root</user>
+	   <pass>101326</pass>
+   </userpass>
+	 
+	 
