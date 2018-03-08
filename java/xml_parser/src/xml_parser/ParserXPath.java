@@ -19,8 +19,8 @@ public class ParserXPath {
 	public static void main(String[] args) throws XPathExpressionException, FileNotFoundException {
 		XPathFactory xpf = XPathFactory.newInstance();
 		XPath xPath = xpf.newXPath();//активировали парсер
-		XPathExpression expr =  xPath.compile("//books/book[@id='2']/authors/author/text()");
-		NodeList nodes = (NodeList)(expr.evaluate(new InputSource("books.xml"),XPathConstants.NODESET)); 
+		XPathExpression expr =  xPath.compile("//regdriver/text()");
+		NodeList nodes = (NodeList)(expr.evaluate(new InputSource("basesetting.xml"),XPathConstants.NODESET)); 
 		for(int i=0;i<nodes.getLength();i++) {
 			System.out.println(nodes.item(i).getNodeValue());
 		}
